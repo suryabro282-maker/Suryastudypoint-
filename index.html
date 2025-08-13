@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RolexCoderZ — Clean Dev Portfolio (Original Template)</title>
+  <meta name="description" content="A clean, fast developer portfolio template. Not affiliated with any existing site." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="antialiased bg-zinc-50 text-zinc-800" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-zinc-200">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <img src="./assets/logo.svg" alt="Logo" class="h-8 w-8" />
+        <span class="font-semibold tracking-tight group-hover:tracking-wide transition-all">RolexCoderZ</span>
+      </a>
+      <button id="navToggle" class="md:hidden p-2 rounded-xl border border-zinc-200">
+        <span class="sr-only">Toggle menu</span>
+        ☰
+      </button>
+      <ul id="navMenu" class="hidden md:flex gap-6 items-center">
+        <li><a href="#work" class="hover:text-zinc-950">Work</a></li>
+        <li><a href="#services" class="hover:text-zinc-950">Services</a></li>
+        <li><a href="#about" class="hover:text-zinc-950">About</a></li>
+        <li><a href="#contact" class="hover:text-zinc-950">Contact</a></li>
+        <li><a href="#hire" class="inline-flex items-center rounded-2xl px-4 py-2 bg-zinc-900 text-white hover:bg-zinc-800">Hire me</a></li>
+      </ul>
+    </nav>
+    <ul id="navDrawer" class="md:hidden hidden px-4 pb-4 space-y-2 border-t border-zinc-200 bg-white">
+      <li><a href="#work" class="block py-2">Work</a></li>
+      <li><a href="#services" class="block py-2">Services</a></li>
+      <li><a href="#about" class="block py-2">About</a></li>
+      <li><a href="#contact" class="block py-2">Contact</a></li>
+      <li><a href="#hire" class="block py-2 font-semibold">Hire me</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-zinc-100 to-transparent"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs rounded-full border px-3 py-1 border-zinc-200 bg-white shadow-sm">Original Template · MIT</div>
+          <h1 class="mt-4 text-4xl sm:text-5xl font-black tracking-tight leading-tight">
+            I build fast, accessible, <span class="underline decoration-4 decoration-zinc-900">problem‑solving</span> web apps.
+          </h1>
+          <p class="mt-4 text-lg text-zinc-600">
+            A modern developer portfolio starter—clean design, smooth animations, and no frameworks beyond Tailwind CDN.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#work" class="inline-flex items-center rounded-2xl px-4 py-2 bg-zinc-900 text-white hover:bg-zinc-800">See my work</a>
+            <a href="#contact" class="inline-flex items-center rounded-2xl px-4 py-2 border border-zinc-200 hover:bg-white">Get in touch</a>
+          </div>
+          <div class="mt-8 flex items-center gap-5 text-sm text-zinc-500">
+            <div class="flex -space-x-3">
+              <img class="h-8 w-8 rounded-full ring-2 ring-white" src="https://api.dicebear.com/9.x/initials/svg?seed=A%20K" alt="A" />
+              <img class="h-8 w-8 rounded-full ring-2 ring-white" src="https://api.dicebear.com/9.x/initials/svg?seed=J%20S" alt="J" />
+              <img class="h-8 w-8 rounded-full ring-2 ring-white" src="https://api.dicebear.com/9.x/initials/svg?seed=M%20T" alt="M" />
+            </div>
+            <span>Trusted by 40+ clients</span>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 bg-gradient-to-tr from-zinc-200 to-transparent rounded-3xl blur-2xl"></div>
+          <div class="relative rounded-3xl border border-zinc-200 bg-white p-6 shadow-xl">
+            <img src="./assets/hero.svg" alt="Hero Illustration" class="w-full h-auto">
+            <div class="mt-4 grid grid-cols-3 gap-3 text-center text-sm">
+              <div class="rounded-xl border border-zinc-200 p-3">
+                <div class="text-xl font-bold">98</div>
+                <div class="text-zinc-500">Lighthouse</div>
+              </div>
+              <div class="rounded-xl border border-zinc-200 p-3">
+                <div class="text-xl font-bold">0.7s</div>
+                <div class="text-zinc-500">TTFB</div>
+              </div>
+              <div class="rounded-xl border border-zinc-200 p-3">
+                <div class="text-xl font-bold">A11y</div>
+                <div class="text-zinc-500">WCAG 2.1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+    <div class="flex items-end justify-between gap-6">
+      <h2 class="text-2xl sm:text-3xl font-bold">Selected work</h2>
+      <a href="#" class="text-sm text-zinc-600 hover:text-zinc-900">View all &rarr;</a>
+    </div>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <article class="group rounded-3xl border border-zinc-200 bg-white overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://picsum.photos/seed/app1/640/400" alt="Project" class="h-44 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold group-hover:underline">Analytics Dashboard</h3>
+          <p class="mt-1 text-sm text-zinc-600">Next.js + REST API + Charts.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="badge">Next.js</span><span class="badge">Express</span><span class="badge">Recharts</span>
+          </div>
+        </div>
+      </article>
+      <article class="group rounded-3xl border border-zinc-200 bg-white overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://picsum.photos/seed/app2/640/400" alt="Project" class="h-44 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold group-hover:underline">E‑commerce Micro‑frontends</h3>
+          <p class="mt-1 text-sm text-zinc-600">Module federation, blazing performance.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="badge">React</span><span class="badge">Module Fed</span><span class="badge">Vite</span>
+          </div>
+        </div>
+      </article>
+      <article class="group rounded-3xl border border-zinc-200 bg-white overflow-hidden hover:shadow-xl transition-shadow">
+        <img src="https://picsum.photos/seed/app3/640/400" alt="Project" class="h-44 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold group-hover:underline">Education SaaS</h3>
+          <p class="mt-1 text-sm text-zinc-600">Subscriptions, dashboards, and CMS.</p>
+          <div class="mt-4 flex gap-2 text-xs">
+            <span class="badge">SaaS</span><span class="badge">Stripe</span><span class="badge">CMS</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="bg-white/60 border-y border-zinc-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-2xl sm:text-3xl font-bold">Services</h2>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="card">
+          <div class="card-emoji">⚡</div>
+          <h3 class="card-title">Frontend Engineering</h3>
+          <p class="card-body">React, Next.js, performance optimization, accessibility, and pixel‑perfect UI.</p>
+        </div>
+        <div class="card">
+          <div class="card-emoji">🧰</div>
+          <h3 class="card-title">Backend & APIs</h3>
+          <p class="card-body">Node.js, REST/GraphQL, Postgres, auth, and production‑grade observability.</p>
+        </div>
+        <div class="card">
+          <div class="card-emoji">🚀</div>
+          <h3 class="card-title">Full‑stack Delivery</h3>
+          <p class="card-body">CI/CD, cloud deployments, containerization, and rigorous testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="https://picsum.photos/seed/team/720/480" alt="Team" class="rounded-3xl border border-zinc-200 shadow-lg">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold">About me</h2>
+        <p class="mt-4 text-zinc-600">I’m a full‑stack problem‑solver focused on building robust, maintainable products with delightful user experiences.</p>
+        <ul class="mt-6 space-y-3 text-zinc-700">
+          <li class="flex gap-3"><span class="tick">✓</span> 6+ years shipping production apps</li>
+          <li class="flex gap-3"><span class="tick">✓</span> Performance & accessibility first</li>
+          <li class="flex gap-3"><span class="tick">✓</span> Transparent, async‑friendly comms</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="hire" class="relative py-20">
+    <div class="absolute inset-0 -z-10 bg-grid"></div>
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-zinc-200 bg-white p-10 md:p-14 shadow-2xl text-center">
+        <h2 class="text-3xl font-bold">Have a project in mind?</h2>
+        <p class="mt-3 text-zinc-600">Let’s build something fast, accessible, and future‑proof.</p>
+        <a href="#contact" class="mt-6 inline-flex items-center rounded-2xl px-6 py-3 bg-zinc-900 text-white hover:bg-zinc-800">Start a conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-20">
+    <div class="rounded-3xl border border-zinc-200 bg-white p-8 shadow-lg">
+      <h2 class="text-2xl sm:text-3xl font-bold">Contact</h2>
+      <form class="mt-6 grid gap-4" onsubmit="event.preventDefault(); alert('Thanks! This demo form doesn\'t send emails.');">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Full name" class="input">
+          <input type="email" placeholder="Email" class="input">
+        </div>
+        <input type="text" placeholder="Subject" class="input">
+        <textarea placeholder="Tell me about your project..." rows="5" class="input"></textarea>
+        <button class="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-zinc-900 text-white hover:bg-zinc-800">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-zinc-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
+      <p>© <span id="year"></span> RolexCoderZ — Original template. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-zinc-900">Twitter</a>
+        <a href="#" class="hover:text-zinc-900">GitHub</a>
+        <a href="#" class="hover:text-zinc-900">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
